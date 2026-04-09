@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(24, 24, 24);
+}
+.first{
+    width: 100%;
+    height: 50px;
+    display: flex; 
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+}
+.first .icon{
+    transform: translateX(15%);
+    width: 100px;
+    height: 100%;
+}
+.category{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    color: white;
+    margin-right: 20px;
+    gap: 40px;
+    transform: translateY(35%) translateX(-3%);
+     font-family: "Merriweather", serif;
+    
+}
+
+
+.categ {padding: 0 8px 5px 8px ;    
+    font-size: 17px;
+
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.categ::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: 0.3s;
+}
+.categ.active::after {
+    width: 100%;
+}
+
+
+/* home */
+.first_photo{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.first_photo p{
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 0.9;
+}
+.first_photo p span{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+}
+
+/* bikes */
+
+h1{
+    color: white;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    padding: 90px 0 70px 0 ;
+}
+.bikemenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.bikemenu div:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.bikescateg{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.bike{
+    width: 250px;
+    height: 290px;
+    margin: 0 20px;
+    background-color: #212121;
+    border: 2px solid #2f2f2f;
+    gap: 10px;
+    
+}
+.first_photo{
+    position: relative;
+    width: 100%;
+}
+.bike p{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 17px;
+    margin-top: -5px;
+}
+.btn{
+    display: block;
+    margin: 10px auto;
+    padding: 8px 24px;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+.yamahar125 .photobike{
+    padding-top: 20px;
+
+}
+.kawasaki1000 .photobike{
+    margin-top: -20px;
+    margin-bottom: -25px;
+
+}
+.honda .photobike{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.ducativ4 .photobike{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.ducatis .photobike{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.kawasakih2r .photobike{
+    padding-top: 20px;
+    padding-bottom: 33px;
+}
+.bike:hover{
+    transform: translateY(-3%);
+    transition: 0.3s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.detailswindow{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height:max-content;
+    padding-bottom: 25px;
+    z-index: 1000;
+    display: none;
+    background-color: #2f2f2f;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+
+    z-index: 999;
+}
+.detailX .detailinfo{
+    line-height: 22px;
+    color: white;
+    padding-left: 15px;
+    margin-top: -40px;
+}
+
+.detailphoto{
+    margin-top: -20px;
+}
+.detailX.kawasakih2r .detailinfo{
+    padding-top: 40px;
+}
+.detailX.yamahar125 .detailinfo{
+    padding-top: 40px;
+}
+.detailX.yamahar125 .detailphoto{
+    padding-top: 20px;
+}
+.detailX.honda .detailinfo{
+    padding-top: 40px;
+}
+.detailX.ducatis .detailinfo{
+    padding-top: 40px;
+}
+.detailX.kawasaki1000 .detailphoto{
+    margin-top: -40px;
+}
+.detailX.kawasaki1000 .detailinfo{
+    margin-top: -70px;
+}
+
+#bikes{
+    padding-bottom: 60px;
+}
+/* orders */
+
+#orders{
+    background-color: #1b1b1b;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.orderform input{
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    background-color: #212121;
+    border: 2px solid #2f2f2f;
+    color: white;
+}
+
+.orderform input::placeholder{
+    color: #5c5c5c;
+    font-size: 17px;
+}
+.orderform select {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    background-color: #212121;
+    border: 2px solid #2f2f2f;
+    color: white;
+}
+
+.orderform button{
+    width: 150px;
+    background-color: #212121;
+    color: white;
+}
+.orderform button:hover{
+    width: 150px;
+    border: white 2px solid;
+    background-color: #212121;
+}
+.order{
+    width: 410px;
+    height: max-content;
+    background-color: #828282;
+    border: 2px solid #2f2f2f;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 15px;
+    line-height: 30px;
+}
+.order .fotka{
+    border-radius: 50%;
+    
+    width: 80px;
+    height: 80px;
+}
+.fotkaimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.order h2{ 
+    justify-content: space-between;
+    margin-bottom: -40px;
+    display: flex;
+
+}
+.order h2 div{
+    margin-bottom: 10px;
+}
+
+.order p{
+    color: #212121;
+    font-family: "Merriweather", serif;
+    font-size: 17px;
+}
+.order span{
+    color:rgb(111, 23, 23);
+    font-weight: 700;
+}
+.orders_section{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.order:hover{
+    transform: translateY(-3%);
+    transition: 0.3s;box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.user .fotka{
+    transform: translateX(100%);
+}
+#orders{
+    padding-bottom: 50px;
+}
+
+/* news */
+.news_page{
+    width: 100;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.infor{
+    width: 360px;
+    height: max-content;
+    background-color: #404040;
+    border: 2px solid #5f5e5e;
+}
+.new_photo{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+    
+}
+.infor p{
+    color: white;
+    font-family: "Merriweather", serif;
+    padding: 25px 15px 10px 15px;
+    line-height: 25px;
+}
+.infor span{
+    color:red;
+    font-weight: 700;
+}
+.infor .ray{
+    color: rgb(158, 186, 255);
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    }
+.infor .ray:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+.infor:hover{
+    transform: translateY(-3%);
+    transition: 0.3s;
+    box-shadow: rgba(255, 64, 64, 0.4) 5px 5px, rgba(240, 46, 46, 0.3) 10px 10px, rgba(255, 90, 90, 0.2) 15px 15px, rgba(235, 75, 75, 0.1) 20px 20px, rgba(247, 60, 60, 0.05) 25px 25px;
+}
+#news{
+    padding-bottom: 70px;
+}
+
+/* contact */
+#contact{
+    padding: 20px;
+    background-color: #1b1b1b;
+}
+
+
+
+
+.footer {
+    color: #fff;
+    padding: 60px 20px 30px;
+    margin-top: 80px;
+    font-family: sans-serif;
+}
+
+/* GRID */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* БЛОКИ */
+.footer-box h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-box p {
+    color: #aaa;
+    margin: 8px 0;
+}
+
+.footer-box a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.footer-box a:hover {
+    color: #ff3c3c;
+    transform: translateX(5px);
+}
+
+/* ЛОГО */
+.logo {
+    font-size: 26px;
+    color: #ff3c3c;
+}
+
+/* ПОДПИСКА */
+.subscribe {
+    display: flex;
+    margin-top: 10px;
+}
+
+.subscribe input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscribe button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff3c3c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: 0.3s;
+}
+
+.subscribe button:hover {
+    background: #ff0000;
+}
+
+/* СОЦСЕТИ */
+.footer-socials {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-socials a {
+    margin: 0 15px;
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #ff3c3c;
+}
+
+/* НИЗ */
+.footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1209px){
+    .first_photo{
+    position: relative;
+}
+
+.first_photo img{
+    width: 100%;
+}
+
+.first_photo p{
+    position: absolute;
+    left: 35%; /* ← двигай вправо */
+    transform: translate(-50%, -50%);
+    color: white;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 768px){
+.category div{
+    display: none;
+}
+
+ .first_photo{
+    position: relative;
+}
+
+.first_photo img{
+    width: 100%;
+}
+
+.first_photo p{
+    position: absolute;
+    left: 35%; /* ← двигай вправо */
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.detailswindow{
+    width: 300px;
+}
+}
