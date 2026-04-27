@@ -3,270 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotoX</title>
+    <title>Log In</title>
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./styleLogIn.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
 </head>
 <body>
-    <div class="first">
-        <div class="icon"><img src="./img/icon.png" alt=""></div>
-        
-        <div class="category">
-            <div class="home"><a href="#home" class="categ">Home</a></div>
-            <div class="bikes"><a href="#bikes" class="categ">Bikes</a></div>
-            <div class="orders"><a href="#orders" class="categ">Orders</a></div>
-            <div class="news"><a href="#news" class="categ">News</a></div>
-            <div class="contact"><a href="#contact" class="categ">Contact</a></div>
-        </div>
-    </div>
-    <section id="home"> 
-    <div class="first_photo">
-        <img src="./img/first.png" alt="">
-        <p>RIDE THE POWER <br><span>Feel the speed. Own the road.</span>
-        </p>
-    </div></section>
-    <section id="bikes">
-        <h1>Featured Bikes</h1>
-
-        <div class="bikemenu">
-            <div class="all">All</div>
-            <div class="yamaha">Yamaha</div>
-            <div class="kawasaki">Kawasaki</div>
-            <div class="honda">Honda</div>
-            <div class="ducati">Ducati</div>
-        </div>
-        <div class="bikescateg">
-            <div class=" bike yamaha yamahar1">
-                <div class="photobike"><img src="./img/yamahaR1.png" alt=""></div> 
-                <p>Yamaha R1 - $15,200</p>
-                <button class=" btn yamahar1">Details</button>
-            </div>
-            <div class=" bike yamaha yamahar6">
-                <div class="photobike"><img src="./img/yamahaR6.png" alt=""></div> 
-                <p>Yamaha R6 - $12,000</p>
-                <button class="btn yamahar6">Details</button>
-            </div>
-            <div class=" bike kawasaki kawasakih2r">
-                <div class="photobike"><img src="./img/kawasakiH2R.png" alt=""></div> 
-                <p>Kawasaki Ninja H2R - $25,000</p>
-                <button class="btn kawasakih2r">Details</button>
-            </div>
-            <div class=" bike yamaha yamahar125">
-                <div class="photobike"><img src="./img/yamahaR125.png" alt=""></div> 
-                <p>Yamaha R125 - $8,000</p>
-                <button class="btn yamahar125">Details</button>
-            </div>
-            <div class=" bike kawasaki kawasaki1000">
-                <div class="photobike"><img src="./img/kawasaki1000.png" alt=""></div> 
-                <p>Kawasaki Ninja 1000 - $11,000</p>
-                <button class="btn kawasaki1000">Details</button>
-            </div>
-            <div class="bike honda">
-                <div class="photobike"><img src="./img/honda.avif" alt=""></div> 
-                <p>Honda CBR1000RR - $13,000</p>
-                <button class="btn honda">Details</button>
-            </div>
-            <div class=" bike ducati ducativ4">
-                <div class="photobike"><img src="./img/ducativ4.png" alt=""></div> 
-                <p>Ducati Panigale V4 - $20,000</p>
-                <button class="btn ducativ4">Details</button>
-            </div>
-            <div class=" bike ducati ducatis">
-                <div class="photobike"><img src="./img/ducatiS.webp" alt=""></div> 
-                <p>Ducati Diavel 1260 - $18,000</p>
-                <button class="btn ducatis">Details</button>
-            </div>
-
-            <div class="overlay"></div> 
-            <div class="detailswindow">
-                <div class="detailX yamahar1">
-                    <div class="detailphoto"><img src="./img/yamahaR1.png" alt=""></div>
-                    <div class="detailinfo">
-                        <h2>Yamaha R1</h2> <br>
-                        <p>The Yamaha R1 is a high-performance sportbike that combines cutting-edge technology with aggressive styling. It features a powerful inline-four engine, advanced electronics, and a lightweight chassis, making it a favorite among motorcycle enthusiasts for both street riding and track performance.</p>
-                    </div>
-                    
-                </div>
-                <div class="detailX yamahar6">
-                    <div class="detailphoto"><img src="./img/yamahaR6.png" alt=""></div>
-                    <div class="detailinfo">
-                        <h2>Yamaha R6</h2> <br>
-                        <p>The Yamaha R6 is a popular middleweight sportbike known for its agility and performance. It features a high-revving inline-four engine, advanced suspension, and aerodynamic design, making it a favorite among riders who enjoy spirited riding on both the street and the track.</p>
-                    </div>
-                </div>
-                <div class="detailX kawasakih2r">
-                    <div class="detailphoto"><img src="./img/kawasakiH2R.png" alt=""></div>
-                    <div class="detailinfo">
-                        <h2>Kawasaki Ninja H2R</h2> <br>
-                        <p>The Kawasaki Ninja H2R is a track-only hyperbike that pushes the limits of performance. It features a supercharged inline-four engine, advanced aerodynamics, and cutting-edge technology, making it one of the most powerful and exclusive motorcycles in the world, designed for experienced riders seeking unparalleled speed and performance on the track.</p>
-                    </div>
-                </div>
-                <div class="detailX yamahar125">
-                    <div class="detailphoto"><img src="./img/yamahaR125.png" alt=""></div>
-                    <div class="detailinfo">
-                        <h2>Yamaha R125</h2> <br>
-                        <p>The Yamaha R125 is a lightweight sportbike designed for beginner riders and those looking for a nimble and stylish motorcycle. It features a small-displacement engine, sporty styling, and user-friendly handling, making it an ideal choice for urban commuting and entry-level riding enthusiasts.</p>
-                </div>
-
-                </div>
-                <div class="detailX kawasaki1000">
-                    <div class="detailphoto"><img src="./img/kawasaki1000.png" alt=""></div>
-                    <div class="detailinfo">
-                        <h2>Kawasaki Ninja 1000</h2> <br>
-                        <p>The Kawasaki Ninja 1000 is a versatile sport-touring motorcycle that offers a blend of performance and comfort. It features a powerful inline-four engine, advanced electronics, and a comfortable riding position, making it suitable for both spirited rides on twisty roads and long-distance touring adventures.</p>
-                    </div>
-                
-                </div>
-                <div class="detailX honda">
-                    <div class="detailphoto"><img src="./img/honda.avif" alt=""></div>
-                    <div class="detailinfo">
-                        <h2>Honda CBR1000RR</h2> <br>
-                        <p>The Honda CBR1000RR, also known as the Fireblade, is a high-performance sportbike that combines aggressive styling with advanced technology. It features a powerful inline-four engine, sophisticated electronics, and a lightweight chassis, making it a popular choice among riders seeking a thrilling and responsive riding experience on both the street and the track.</p> </div>
-                </div>
-
-                <div class="detailX ducativ4">
-                    <div class="detailphoto"><img src="./img/ducativ4.png" alt=""></div>
-                    <div class="detailinfo">
-                        <h2>Ducati Panigale V4</h2> <br>
-                        <p>The Ducati Panigale V4 is a high-performance sportbike that combines Italian design with cutting-edge technology. It features a powerful V4 engine, advanced aerodynamics, and sophisticated electronics, making it a favorite among riders who seek a thrilling and dynamic riding experience on both the street and the track.</p>
-                    </div>
-                
-                </div>
-
-                <div class="detailX ducatis">
-                    <div class="detailphoto"><img src="./img/ducatiS.webp" alt=""></div>
-                    <div class="detailinfo">
-                        <h2>Ducati Diavel 1260</h2> <br>
-                        <p>The Ducati Diavel 1260 is a unique blend of cruiser and sportbike, offering a powerful V-twin engine, aggressive styling, and advanced technology. It features a muscular design, comfortable riding position, and impressive performance, making it a popular choice for riders who want a distinctive and exhilarating motorcycle that stands out on the road.</p></div>
-                        
-                </div></div>
-
-    </section>
-
-    <br>
-    <section id="orders">
-        <h1>Orders</h1> 
-            <form class="orderform">
-                <input type="text" id="name" placeholder="Full name..." required>
-
-                <input type="email" id="email" placeholder="Email..."  required>
-
-                <select id="bike"  required>
-                    <option value="">--Select a Bike--</option>
-                    <option value="yamahaR1">Yamaha R1</option>
-                    <option value="yamahaR6">Yamaha R6</option>
-                    <option value="kawasakiH2R">Kawasaki Ninja H2R</option>
-                    <option value="yamahaR125">Yamaha R125</option>
-                    <option value="kawasaki1000">Kawasaki Ninja 1000</option>
-                    <option value="hondaCBR1000RR">Honda CBR1000RR</option>
-                    <option value="DucatiPanigaleV4">Ducati Panigale V4</option>
-                    <option value="DucatiDiavel1260">Ducati Diavel 1260</option>
-                </select>
-
-                <button class="place-order" type="submit">Place Order</button>
+    <div class="main">
+        <div class="logInWindow">
+            <div class="icon"><img src="./img/icon.png" alt=""></div>
+            <p class="word">WELCOME <br><span>BACK</span></p>
+            <p class="grey">Log in to continue your journey</p>
+            <form>
+                <input type="email" placeholder="Email address" class="email">
+                <input class="pass" type="password" placeholder="Password">
+                <div class="remember"><input type="checkbox" class="check"><span class="remember">Remember me</span>
+</div>
+                <button class="button">LOG IN</button>
             </form>
-        <div class="orders_section">
-            <div class="order fatima">
-                <h2>Fatima Aliyeva <div class="fotka"><img  class="fotkaimg" src="https://mir-s3-cdn-cf.behance.net/projects/404/bded8e185625153.66429fac3f7fe.png" alt=""></div></h2>
-                
-                <p>Email: fatima.aliyeva@gmail.com</p>
-                <p>Ordered Bike: <span> Yamaha R1</span></p>
-            </div>
-            <div class="order emil">
-                <h2>Emil Huseynov <div class="fotka"><img  class="fotkaimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNTVUgsoHe9dAZlVAGzgAeVHHvPYr-esmrA&s" alt=""></div></h2>
-                
-                <p>Email: emil.huseynov12@mail.ru</p>
-                <p>Ordered Bike: <span> Kawasaki Ninja H2R</span></p>
-            </div>
-            <div class="order amina">
-                <h2>Amina Mammadova <div class="fotka"><img  class="fotkaimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQSUFmQmCETcUOac0Ra1jeSMmPhZfzYBDcg&s" alt=""></div></h2>
-                
-                <p>Email: amina.mam@gmail.com</p>
-                <p>Ordered Bike: <span> Honda CBR1000RR</span></p>
-            </div>
-           
+            <button class="a">Create a new account</button>
 
         </div>
-    </section>
-
-    <section id="news">
-        
-        <h1>News</h1>
-        <div class="news_page">
-            <div class="infor">
-                <div class="new_photo">
-                    <img src="https://cdn.visordown.com/2026-04/site-image-resize-2026-04-09t102637.952.png?width=1200&format=webp&aspect_ratio=16:9X" alt="">
-                </div>
-                <p><span>Yamaha</span> is planning to reveal the special livery as a celebration of 30 years of BSB, and it will do so by applying the livery to <a target="_blank" class= "ray" href="https://en.wikipedia.org/wiki/Bradley_Ray">Bradley Ray’s</a>  2026 McAMS Yamaha R1. Ray will use the revived paint scheme for each race that takes place at Brands Hatch in July.</p>
-            </div>
-            <div class="infor">
-                <div class="new_photo">
-                    <img src="https://cdn.visordown.com/2026-04/site-image-resize-2026-04-08t150821.673.png?width=1200&format=webp&aspect_ratio=16:9" alt="">
-                </div>
-                <p>23-time Isle of Man TT winner <a target="_blank" class="ray" href="https://en.wikipedia.org/wiki/John_McGuinness_(motorcyclist)">John McGuinness</a> has been confirmed as a star guest for this month’s International Classic Motorcycle Show, alongside current Honda Racing UK team-mate Dean Harrison. </p>
-            </div>
-            <div class="infor">
-                <div class="new_photo">
-                    <img src="https://cdn.visordown.com/2026-03/p90630896_highres_humanoid-robotics-at.jpg?width=1200&format=webp&aspect_ratio=16:9" alt="">
-                </div>
-                <p>BMW might not be building bikes at its Leipzig plant, but what’s happening inside the factory could still have implications for the future of motorcycle manufacturing. </p>
-            </div>
+        <div class="otherWindow">
+            <img src="./img/window.png" alt="">
         </div>
-    </section>
-    <section id="contact">
-        <footer class="footer">
-    <div class="footer-container">
-
-        <div class="footer-box">
-            <h2 class="logo"><i class="fa-solid fa-motorcycle"></i> BikeStore</h2>
-            <p>Your dream bikes in one place. Speed, power and style.</p>
-        </div>
-
-        <div class="footer-box">
-            <h3>Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#bikes">Bikes</a>
-            <a href="#orders">Orders</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-        <div class="footer-box">
-            <h3>Contact Us</h3>
-            <p><i class="fa-solid fa-at"></i> bikeshop@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +994 50 123 45 67</p>
-            <p><i class="fa-solid fa-location-crosshairs"></i> Baku, Azerbaijan</p>
-        </div>
-
-        <div class="footer-box">
-            <h3>Subscribe</h3>
-            <p>Get updates about new bikes <i class="fa-solid fa-fire"></i></p>
-            <div class="subscribe">
-                <input class="mailinfo" type="email" placeholder="Your email" required>
-                <button class="sendinfo">Send</button>
-            </div>
-        </div>
-
     </div>
+    <script src="./appLogIn.js"></script>
 
-    <!-- СОЦСЕТИ -->
-    <div class="footer-socials">
-        <a href="#">Instagram</a>
-        <a href="#">TikTok</a>
-        <a href="#">Telegram</a>
-        <a href="#">YouTube</a>
-    </div>
-
-    <!-- НИЗ -->
-    <p class="footer-copy">© 2026 BikeStore | All rights reserved</p>
-</footer>
-    </section>
-
-
-
-    <script src="./app.js"></script>
 </body>
 </html>

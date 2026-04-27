@@ -15,7 +15,7 @@ button.addEventListener("click",(e) =>{
     let savedPassword = localStorage.getItem("password");
         if(email === savedEmail && password === savedPassword){
         alert("Welcome!");
-        window.location.href = "index.html";
+        window.location.href = "main.html";
         } else {
         alert("Incorrect email or password");
         }

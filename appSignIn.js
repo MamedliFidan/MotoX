@@ -30,5 +30,5 @@ button.addEventListener("click", (e) => {
     alert("Account created!");
 
     // переход на логин
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 });
