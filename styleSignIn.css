@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+}
+.main{
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+.signInWindow{
+    background-color: black;
+    width: 45%;
+    height: 99.9vh;
+}
+.otherWindow{
+    width: 70%;
+    height: 99vh;
+    
+
+}
+img{
+    width: 100%;
+    height: 99%;
+    object-fit:cover;
+}
+
+
+body{
+    background: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh; /* важно */
+}
+
+/* ГЛАВНЫЙ БЛОК */
+.container{
+    width: 70%;
+    margin-left: 50px;
+    text-align: center;
+}
+
+/* ЛОГО */
+.logo{
+    width: 120px;
+    margin-bottom: 25px;
+    margin: 40px auto;
+
+}
+
+/* ЗАГОЛОВОК */
+h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+h1 span{
+    color: red;
+}
+
+p{
+    color: gray;
+    margin-bottom: 30px;
+}
+
+/* INPUT */
+input{
+    width: 100%;
+    padding: 14px;
+
+    margin-bottom: 15px;
+
+    background: transparent;
+    border: 1px solid #444;
+    color: white;
+
+    text-align: center; /* как на картинке */
+}
+
+input:focus{
+    outline: none;
+    border-color: red;
+}
+
+/* ЧЕКБОКСЫ */
+.check input{ /* центрируем */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.check input{
+    width: max-content;
+}
+.check span{
+    color: red;
+}
+
+/* КНОПКА */
+button{
+    width: 100%;
+    padding: 14px;
+
+    background: red;
+    border: none;
+
+    color: white;
+    font-size: 16px;
+
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #cc0000;
+}
+
+/* НИЖНИЙ ТЕКСТ */
+.login{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login a{
+    color: red;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .main{
+    display: block;
+    }
+    .signInWindow{
+    background-color: black;
+    width: 115%;
+    height: 100vh;
+}
+.otherWindow{
+    display: none;
+}
+body{
+    background-color: black;
+}
+}
